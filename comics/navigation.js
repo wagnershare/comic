@@ -2,7 +2,7 @@
 const currentPage = window.location.pathname.split('/').pop();
 
 // Fetch episode metadata from episodes.json
-fetch('/comics/episodes.json')
+fetch('episodes.json')
     .then(response => response.json())
     .then(data => {
         const episodes = data.episodes;
